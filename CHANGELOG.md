@@ -2,6 +2,16 @@
 
 All notable changes to Pallet Pilot will be documented in this file.
 
+## [1.1.0] - 2026-02-04
+
+### Added
+- Cost per item calculation in FAB panel (bid price + shipping + VAT)
+- Shipping cost tiers with automatic lookup based on pallet weight
+- User-defined shipping cost overrides for PLN currency
+- Fully customizable shipping tiers for GBP, EUR, and USD currencies
+- "Exclude shipping" checkbox to calculate costs without shipping component
+- Custom scrollbar styling in popup and FAB panel
+
 ## [1.0.1] - 2026-02-04
 
 ### Changed
