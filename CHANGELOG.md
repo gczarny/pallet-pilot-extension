@@ -2,6 +2,12 @@
 
 All notable changes to Pallet Pilot will be documented in this file.
 
+## [1.0.1] - 2026-02-04
+
+### Changed
+- New pallet jack icon
+- Removed debug console logs
+
 ## [1.0.0] - 2026-02-04
 
 ### Added
