@@ -2,6 +2,19 @@
 
 All notable changes to Pallet Pilot will be documented in this file.
 
+## [1.1.1] - 2026-02-05
+
+### Fix
+
+- **SKU extraction for manifest API** - Fixed bug where some auctions failed to download manifests with error "Nie znaleziono manifestu" (Manifest not found)
+    - URLs like `spLc5OJ9JNK5032026` were incorrectly truncated to `spLc5OJ9` instead of `spLc5OJ9JNK`
+    - Now scrapes actual SKU directly from page details (primary method)
+    - Improved URL fallback: properly removes 7-digit batch codes (`5032026`) and 8-digit dates (`20260127`)
+
+- **Extension context invalidation error** - Added graceful handling when extension is reloaded while page is open
+    - Previously showed "Uncaught Error: Extension context invalidated"
+    - Now silently handles the error and prompts user to refresh if needed
+
 ## [1.1.0] - 2026-02-04
 
 ### Added
