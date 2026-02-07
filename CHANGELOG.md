@@ -2,6 +2,15 @@
 
 All notable changes to Pallet Pilot will be documented in this file.
 
+## [1.1.2] - 2026-02-07
+
+### Fix
+
+- **Wrong bid price scraped from page** - Fixed bug where starting price was used instead of current/winning bid
+    - Cost breakdown in FAB panel showed the starting price instead of the actual bid
+    - All downstream calculations (cost per item, VAT, total) were incorrect as a result
+    - Now correctly targets `.current-bid .date` element which contains the actual bid price
+
 ## [1.1.1] - 2026-02-05
 
 ### Fix
